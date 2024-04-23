@@ -1,4 +1,5 @@
 # JwtAuth
+<h3>Front-End Authentication Application with Angular</h3>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
