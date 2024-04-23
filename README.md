@@ -1,4 +1,3 @@
-# JwtAuth
 <h1>Front-End Authentication Application with Angular</h1>
 <br>
 
