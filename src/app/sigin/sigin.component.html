@@ -1,0 +1,46 @@
+<div class="cart">
+    <h3>Sign Up</h3>
+    <div class="input-group flex-nowrap" id="name">
+        <input type="text" class="form-control" placeholder="Username" [(ngModel)] = "user.UserName"  >
+    </div>
+    <div class="input-group flex-nowrap" id="password" >
+        <input type="text" class="form-control" placeholder="Email"  [(ngModel)] = "user.Email" >
+    </div>
+    <div class="input-group flex-nowrap" id="password">
+        <input type="password" class="form-control" placeholder="Password" [(ngModel)] = "user.Password" >
+    </div>
+    <div class="input-group flex-nowrap" id="password">
+        <input type="password" class="form-control" placeholder="Checked Password" [(ngModel)] = "checkedPassword" >
+    </div>
+    <div class="admining">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" [(ngModel)]="isChecked" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Admin
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+            <label class="form-check-label" for="flexCheckCheckedDisabled">
+              User
+            </label>
+        </div>
+
+    </div>
+    <div style="margin: 0 auto; text-align: center;margin-top: 40px;" *ngIf="this.isLoding == true">
+        <div class="spinner-border" role="status" id="loading">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    
+    <div class="butn-registre">
+        <button (click)="registre()">
+            Registre
+        </button>
+    </div> 
+
+    <div class="retourn-connexion">
+        <a class="lien" href="" routerLink="/login">Retournez à la page de connexion </a>
+    </div>
+
+</div>

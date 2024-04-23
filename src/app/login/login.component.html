@@ -1,0 +1,36 @@
+<div class="all">
+    <div class="description">
+            <h2>JWT Authentification</h2>
+            <p class="text">
+                est un protocole d'authentification basé sur des jetons qui permet d'établir
+                 l'identité des utilisateurs dans les applications web et les services web. Les JWT 
+                 sont des chaînes de caractères cryptées qui contiennent des informations sur l'utilisateur
+                  et sont utilisées pour vérifier son identité lors de chaque requête au serveur.
+            </p>
+    </div>
+    <div class="login">
+        <h4>Se Connecter </h4>
+
+        <div class="input-group flex-nowrap" id="name">
+            <input type="text" class="form-control" placeholder="Username"  [(ngModel)]="username" >
+        </div>
+        <div class="input-group flex-nowrap" id="password">
+            <input type="password" class="form-control" placeholder="Password"  [(ngModel)] ="password" >
+        </div>
+        <div style="margin: 0 auto; text-align: center;margin-top: 40px;" *ngIf="this.isLoding == true">
+            <div class="spinner-border" role="status" id="loading">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <button class="btun-login" (click)="afficher()">
+            Login
+        </button>
+        <div>
+            <a class="lien"  routerLink="/registre">Si vous n'avez pas de compte ? créez-en un maintenant </a>
+        </div>
+        
+        
+        
+    </div>
+    
+</div>

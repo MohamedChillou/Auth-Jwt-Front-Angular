@@ -1,0 +1,75 @@
+.all{
+    display: flex;
+    gap: 90px;
+    flex-wrap: wrap;
+    margin:10px;
+    margin-top: 8%;
+    align-items: start;
+}
+
+.description{
+    border: solid 0px;
+    width: 58%;
+    text-align: center;
+    padding: 80px;
+    min-width: 400px;
+}
+.login{
+    padding: 25px;
+    border: solid 0px;
+    border-radius: 30px;
+    width: 30%;
+    min-width: 400px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.81);
+}
+.text{
+    text-align: left;
+    padding: 25px;
+    border: solid 0px ; 
+}
+#name{
+    margin-top: 50px;
+}
+
+input{
+    border-radius: 20px;
+}
+#password{
+    margin-top: 30px;
+
+}
+.btun-login{
+    border-radius: 20px;
+    background: none;
+    background-color: white;
+    border: solid 0px;
+    margin-top: 30px;
+    padding: 5px 25px 5px 25px;
+    margin-bottom: 19px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btun-login:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1) ;
+}
+input:focus{
+    border-color: rgb(255, 255, 255) ;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.69);
+  }
+
+.lien{
+    font-size: small;
+    color: black;
+}
+  
+@media only screen and (max-width: 980px){
+    .description{
+        display: none;
+    }
+    .login{
+        margin: 0 auto;
+    }
+
+  }
